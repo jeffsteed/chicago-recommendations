@@ -13,6 +13,7 @@ class ApplicationController < Sinatra::Base
 
   # I need to specify my views folder
   set :views, File.expand_path("../../views", __FILE__)
+  set :public, File.expand_path("../../public", __FILE__)
 
   not_found do
     erb :page_not_found
