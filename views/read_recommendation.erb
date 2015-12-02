@@ -1,3 +1,7 @@
-<% @recs.each do |place| %>
-  <li><%= place.place %></li> 
-<% end %>
+<div class="row">
+  <% @recs.each do |place| %>
+    <div class="col-md-4 places">
+      <h4 id="<%= place.id %>" class="place"><%= place.place %></h4>
+    </div>
+  <% end %>
+</div>

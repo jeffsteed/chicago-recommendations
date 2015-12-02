@@ -17,7 +17,9 @@ class RecommendationsController < ApplicationController
     @rec.type_of_place = params[:type_of_place]
     @rec.notes = params[:notes]
     @rec.save
-    erb :index
+    if @rec.save
+      redirect "/"
+    end
   end
 
   get "/api" do

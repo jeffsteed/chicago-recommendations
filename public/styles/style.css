@@ -1,0 +1,18 @@
+.places {
+  background-color: turquoise;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  height: 60px;
+  padding-top: 1%;
+}
+
+.places h4:hover {
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.errors {
+  text-align: center;
+}
